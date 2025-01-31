@@ -1,0 +1,103 @@
+<!--Formulário com finalidade de treino de HTML, formulário para cadastro de alunos-->
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <title>Cadastro de alunos FdM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class = body>
+<form> 
+    <div id = container>
+        <div id = titulo>
+            <h1>Cadastro - FdM<br></h1>
+            <h2>Insira os dados nos campos abaixo</h2>
+        </div>
+        
+        <fieldset id = geral>
+
+        <div id = dados>
+            <fieldset class = "interno">
+                <h3 class = "titulinhosaluno">Aluno:</h3>
+                <label class = "sub">Nome:</label>
+                <input type = "text" class = "dados">
+                <br><br>
+
+                <label class = "sub">Sobrenome:</label>
+                <input type = "text" class = "dados">
+            </fieldset>
+        </div>
+
+        <div id = dados>
+            <fieldset class = "interno">
+                <h3 class = "titulinhos">Responsável:</h3>
+                <label class = "sub">Nome:</label>
+                <input type = "text" class = "dados">
+                <br><br>
+
+                <label class = "sub">Sobrenome:</label>
+                <input type = "text" class = "dados">
+            </fieldset>
+        </div>
+
+        <div id = mensalidades>
+            <h3 class = "titulinhos">Pagamentos:</h3>
+            <label class = "sub">Matrícula:</label>
+            <input type = "number" value = matricula class = "dados" step = "30">
+            <br> <br>
+
+            <label class = "sub">Mensalidade:</label>
+            <input type = "number" value = mensalidade class = "dados" step = "30">
+        </div>
+    
+        <div id = modalidade>
+            <h3 class = "titulinhos">Modalidade:</h3>
+            <label class = "radio">Presencial
+            <input type = "radio" name = "y" value = "presencial" checked class = "oi">
+            </label>
+            <label class = "radio">Online
+            <input type = "radio" name = "y" value = "Online" class = "oi">
+            </label>
+        </div>
+
+        <div id = dia>
+            <h3 class = "titulinhosdia">Dia:</h3>
+            <select class = "select">
+                <option selected disabled class = "select">Selecione</option>
+                <option value = segunda class = "select">Segunda</option>
+                <option value = terça class = "select">Terça</option>
+                <option value = quarta class = "select">Quarta</option>
+                <option value = quinta class = "select">Quinta</option>
+                <option value = sexta class = "select">Sexta</option>
+                <option value = sabado class = "select">Sábado</option>
+            </select>
+        </div>
+    
+        <div id = contrato>
+            <h3 class = "titulinhoscontrato">Situação do contrato:</h3>
+            <label class = contrato>Assinado<input type = "radio" name = "z" value = "assinado" checked class = "oi"></label>
+            <label class = contrato>Digital<input type = "radio" name = "z" value = "digital" class = "oi"></label>
+            <label class = contrato>Não possui<input type = "radio" name = "z" value = "nãopossui" class = "oi"></label>
+        </div>
+
+        <div id = botao>
+            <br>
+            <input type = "submit" value = "enviar" class = "botao">
+        </div>
+
+        <div id = imagem>
+            <a href = "https://www.instagram.com/fabricadmelhorias/" target="_blank"><img src = "https://img.freepik.com/vetores-premium/ilustracao-vetorial-do-logotipo-do-instagram_1300495-24.jpg?semt=ais_hybrid"
+            alt = "Instagram" class = "imgI"></a>
+
+            <a href = "https://www.facebook.com/p/F%C3%A1brica-de-Melhorias-100090157701371/" target ="_blank"><img src = "https://cdn-icons-png.flaticon.com/512/4406/4406220.png"a
+            alt = "Facebook"  class = "imgF"></a>
+        </div>
+        </fieldset>
+    </div>
+</form>
+</body>
+</html>
+
+<!--próxima proposta, deixar o site responsivo para ambos os monitores-->
