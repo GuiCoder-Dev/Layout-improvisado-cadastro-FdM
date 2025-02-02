@@ -21,44 +21,44 @@
         <div id = dados>
             <fieldset class = "interno">
                 <h3 class = "titulinhosaluno">Aluno:</h3>
-                <label class = "sub">Nome:</label>
-                <input type = "text" class = "dados">
+                <label class = "sub" for = "aluno">Nome:</label>
+                <input type = "text" class = "dados" id = "aluno" pattern = "[a-zA-Z\s]+" required>
                 <br><br>
 
-                <label class = "sub">Sobrenome:</label>
-                <input type = "text" class = "dados">
+                <label class = "sub" for = "sobre">Sobrenome:</label>
+                <input type = "text" class = "dados" id = "sobre" pattern = "[a-zA-Z\s]+" required>
             </fieldset>
         </div>
 
         <div id = dados>
             <fieldset class = "interno">
                 <h3 class = "titulinhos">Responsável:</h3>
-                <label class = "sub">Nome:</label>
-                <input type = "text" class = "dados">
+                <label class = "sub" for = "res">Nome:</label>
+                <input type = "text" class = "dados" id = "res" pattern = "[a-zA-Z\s]+" required>
                 <br><br>
 
-                <label class = "sub">Sobrenome:</label>
-                <input type = "text" class = "dados">
+                <label class = "sub" for = "sivo">Sobrenome:</label>
+                <input type = "text" class = "dados" id = "sivo" pattern = "[a-zA-Z\s]+" required>
             </fieldset>
         </div>
 
         <div id = mensalidades>
             <h3 class = "titulinhos">Pagamentos:</h3>
-            <label class = "sub">Matrícula:</label>
-            <input type = "number" value = matricula class = "dados" step = "30">
+            <label class = "sub" for = "matri">Matrícula:</label>
+            <input type = "number" class = "dados" id = "matri" required>
             <br> <br>
 
-            <label class = "sub">Mensalidade:</label>
-            <input type = "number" value = mensalidade class = "dados" step = "30">
+            <label class = "sub" for = "mensa">Mensalidade:</label>
+            <input type = "number"  class = "dados"  id = "mensa" required>
         </div>
     
         <div id = modalidade>
             <h3 class = "titulinhos">Modalidade:</h3>
-            <label class = "radio">Presencial
-            <input type = "radio" name = "y" value = "presencial" checked class = "oi">
+            <label class = "radio" for = "presencial">Presencial
+            <input type = "radio" name = "y" value = "presencial" checked class = "oi" id = "presencial">
             </label>
-            <label class = "radio">Online
-            <input type = "radio" name = "y" value = "Online" class = "oi">
+            <label class = "radio" for = "online">Online
+            <input type = "radio" name = "y" value = "Online" class = "oi" id = "online">
             </label>
         </div>
 
@@ -77,9 +77,9 @@
     
         <div id = contrato>
             <h3 class = "titulinhoscontrato">Situação do contrato:</h3>
-            <label class = contrato>Assinado<input type = "radio" name = "z" value = "assinado" checked class = "oi"></label>
-            <label class = contrato>Digital<input type = "radio" name = "z" value = "digital" class = "oi"></label>
-            <label class = contrato>Não possui<input type = "radio" name = "z" value = "nãopossui" class = "oi"></label>
+            <label class = contrato for = "assinado">Assinado<input type = "radio" name = "z" value = "assinado" checked class = "oi" id = "assinado"></label>
+            <label class = contrato for = "digital">Digital<input type = "radio" name = "z" value = "digital" class = "oi" id = "digital"></label>
+            <label class = contrato for = "np">Não possui<input type = "radio" name = "z" value = "nãopossui" class = "oi" id = "np"></label>
         </div>
 
         <div id = botao>
